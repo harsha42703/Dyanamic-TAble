@@ -119,13 +119,13 @@ const TableComponent = () => {
         <select
           value={editMode ? editLevel : newLevel}
           onChange={(e) => editMode ? setEditLevel(e.target.value) : setNewLevel(e.target.value)}
-          className="py-6 px-8 left-align border rounded bg-white shadow-sm">
+          className="py-8 px-8 left-align border rounded bg-white shadow-sm">
           <option>Easy</option>
           <option>Medium</option>
           <option>Hard</option>
         </select>
         {editMode ? (
-          <button onClick={handleEditSave} className="ml-2 bg-yellow-500 text-white p-2 rounded shadow-md">
+          <button onClick={handleEditSave} className="ml-2 bg-yellow-500 py-8 text-white px-2 rounded shadow-md">
             Save
           </button>
         ) : (
