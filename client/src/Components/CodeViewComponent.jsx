@@ -39,7 +39,7 @@ const CodeViewComponent = () => {
   return (
     <div className="flex flex-col w-screen md:flex-row h-screen p-6">
       <ResizableBox
-        width={600}
+        width={300}
         height={Infinity}
         minConstraints={[300, Infinity]}
         maxConstraints={[800, Infinity]}
