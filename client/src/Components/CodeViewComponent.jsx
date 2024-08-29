@@ -37,7 +37,7 @@ const CodeViewComponent = () => {
   }, [copied]);
 
   return (
-    <div className="flex flex-col md:flex-row h-screen p-6">
+    <div className="flex flex-col w-screen md:flex-row h-screen p-6">
       <ResizableBox
         width={600}
         height={Infinity}
