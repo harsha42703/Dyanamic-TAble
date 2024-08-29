@@ -125,11 +125,11 @@ const TableComponent = () => {
           <option>Hard</option>
         </select>
         {editMode ? (
-          <button onClick={handleEditSave} className="ml-2 bg-yellow-500 py-8 text-white px-2 rounded shadow-md">
+          <button onClick={handleEditSave} className="ml-2 bg-yellow-500 py-10 text-white px-2 rounded shadow-md">
             Save
           </button>
         ) : (
-          <button onClick={handleAdd} className="ml-2 bg-sky-500 text-white p-2 rounded shadow-md">
+          <button onClick={handleAdd} className="ml-2 bg-sky-500 text-white py-10 px-2 rounded shadow-md">
             Add
           </button>
         )}
