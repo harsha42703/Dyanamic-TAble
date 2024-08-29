@@ -29,7 +29,7 @@ mongoose
   .then(() => {
     console.log('Connected to MongoDB');
     app.listen(PORT, () =>
-      console.log(`Server is running on http://localhost:5000`)
+      console.log(`Server is running on https://dynamic-table-hzhj.onrender.com`)
     );
   })
   .catch((err) => {

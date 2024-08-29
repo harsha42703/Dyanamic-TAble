@@ -23,7 +23,7 @@ const TableComponent = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/questions');
+      const response = await axios.get('https://dynamic-table-hzhj.onrender.com/api/questions');
       setData(response.data);
     } catch (error) {
       console.error('Error fetching data', error);
@@ -36,7 +36,7 @@ const TableComponent = () => {
       return;
     }
     try {
-      const response = await axios.post('http://localhost:5000/api/questions', {
+      const response = await axios.post('https://dynamic-table-hzhj.onrender.com/api/questions', {
         question: newQuestion,
         code: newCode || '// Your code here',
         level: newLevel,
@@ -53,7 +53,7 @@ const TableComponent = () => {
   const handleDelete = async (id) => {
     if (!window.confirm('Are you sure you want to delete this question?')) return;
     try {
-      await axios.delete(`http://localhost:5000/api/questions/${id}`);
+      await axios.delete(`https://dynamic-table-hzhj.onrender.com/api/questions/${id}`);
       setData(data.filter((item) => item._id !== id));
     } catch (error) {
       console.error('Error deleting question', error);
@@ -74,7 +74,7 @@ const TableComponent = () => {
       return;
     }
     try {
-      const response = await axios.put(`http://localhost:5000/api/questions/${currentEditId}`, {
+      const response = await axios.put(`https://dynamic-table-hzhj.onrender.com/api/questions/${currentEditId}`, {
         question: editQuestion,
         code: editCode || '// Your code here',
         level: editLevel,

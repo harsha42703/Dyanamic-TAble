@@ -16,7 +16,7 @@ const CodeViewComponent = () => {
   useEffect(() => {
     const fetchCodeAndDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/questions/${id}`);
+        const response = await axios.get(`https://dynamic-table-hzhj.onrender.com/api/questions/${id}`);
         setCode(response.data.code);
         setQuestionDetails(response.data.question);
       } catch (error) {
